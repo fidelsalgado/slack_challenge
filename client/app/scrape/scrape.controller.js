@@ -2,8 +2,10 @@
 
 angular.module('slackChallengeApp')
   .controller('ScrapeCtrl', function ($scope, $http) {
-    $scope.tags = [];
-    $http.post('/api/scraper', {url: 'http://google.com'}).success(function(tags) {
-      $scope.tags = tags;
-    });
+    $scope.urlSubmit = function(user) {
+      $scope.tags = [];
+      $http.post('/api/scraper', {url: user.url}).success(function(tags) {
+        $scope.tags = tags;
+      });
+    };
   });

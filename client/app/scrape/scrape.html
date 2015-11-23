@@ -4,4 +4,21 @@
   <ul class="nav nav-tabs nav-stacket col-md-4 col-lg-4 col-sm-6" ng-repeat="tag in tags">
     <li><p>{{tag}}</p></li>
   </ul>
+  <br>
+  <br>
+  <form novalidate class="simple-form">
+    URL: <input type="text" ng-model="user.url" /><br />
+    <input type="submit" ng-click="urlSubmit(user)" value="Submit" />
+  </form>
+
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+  
+  <h1>Hello SyntaxHighlighter</h1>
+  <pre class="brush: js;">
+  function helloSyntaxHighlighter()
+  {
+    return "hi!";
+  }
+  </pre>
+
 </div>

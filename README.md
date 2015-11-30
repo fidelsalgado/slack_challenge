@@ -13,3 +13,4 @@ run the following command:
 ```bash
 $ grunt serve
 ```
+When the server is running you can run the app by clicking [this link](http://localhost:9000/scrape).

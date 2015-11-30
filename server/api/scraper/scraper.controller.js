@@ -25,6 +25,7 @@ exports.index = function(req, res) {
       }
     }
 
-    res.json({tagsCounter: tagsCounter});
+    res.json({tagsCounter: tagsCounter,
+              html: html});
   });
 };
